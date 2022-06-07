@@ -1,0 +1,32 @@
+{
+  "name": "reading-vault",
+  "version": "1.0.0",
+  "description": "Reading Vault - Store book informations locally.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalend/reading-vault.git"
+  },
+  "keywords": [
+    "reading",
+    "book",
+    "vault",
+    "book",
+    "informations"
+  ],
+  "author": "Alen Demirov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalend/reading-vault/issues"
+  },
+  "homepage": "https://github.com/aalend/reading-vault#readme",
+  "devDependencies": {
+    "sass": "^1.52.2",
+    "vite": "^2.9.10"
+  }
+}
