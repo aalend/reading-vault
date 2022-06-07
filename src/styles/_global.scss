@@ -1,0 +1,62 @@
+:root {
+  --font-family: 'Lato', sans-serif;
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-300: hsl(0, 0%, 98%);
+  --neutral-500: hsl(0, 0%, 88%);
+  --neutral-700: hsl(0, 0%, 27%);
+  --neutral-900: hsl(0, 0%, 17%);
+  --accent-400: hsl(208, 97%, 85%);
+  --accent-700: hsl(208, 97%, 75%);
+
+  --shadow-color: 209deg 61% 46%;
+  --shadow-elevation-low: 0.6px 0.6px 1px hsl(var(--shadow-color) / 0.34),
+    1.1px 1.1px 1.8px -1.2px hsl(var(--shadow-color) / 0.34),
+    2.5px 2.5px 4px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.6px 0.6px 1px hsl(var(--shadow-color) / 0.36),
+    2.1px 2.1px 3.3px -0.8px hsl(var(--shadow-color) / 0.36),
+    5.2px 5.2px 8.3px -1.7px hsl(var(--shadow-color) / 0.36),
+    12.7px 12.7px 20.2px -2.5px hsl(var(--shadow-color) / 0.36);
+
+  --size-100: clamp(0.51rem, calc(0.48rem + 0.16vw), 0.64rem);
+  --size-200: clamp(0.64rem, calc(0.6rem + 0.2vw), 0.8rem);
+  --size-300: clamp(0.8rem, calc(0.75rem + 0.25vw), 1rem);
+  --size-400: clamp(1rem, calc(0.94rem + 0.31vw), 1.25rem);
+  --size-500: clamp(1.25rem, calc(1.17rem + 0.39vw), 1.56rem);
+  --size-600: clamp(1.56rem, calc(1.46rem + 0.49vw), 1.95rem);
+  --size-700: clamp(1.95rem, calc(1.83rem + 0.61vw), 2.44rem);
+  --size-800: clamp(2.44rem, calc(2.29rem + 0.76vw), 3.05rem);
+  --size-900: clamp(3.05rem, calc(2.86rem + 0.95vw), 3.82rem);
+  --size-1000: clamp(3.82rem, calc(3.58rem + 1.19vw), 4.77rem);
+
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--neutral-900);
+  background-color: var(--neutral-100);
+}
+
+h1 {
+  font-size: var(--size-900);
+  line-height: var(--leading-none);
+  letter-spacing: -3px;
+  margin-block-end: var(--size-700);
+}
+
+h2 {
+  font-size: var(--size-600);
+  line-height: var(--leading-tight);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -13,27 +13,49 @@
   <body>
     <!-- Skip to main-content -->
     <div class="site-page">
-      <div class="">
+      <div class="wrapper splitter">
         <header class="site-head">
-          <div class="site-head__inner">
-            <h1 class="logo">Reading Vault</h1>
+          <div class="site-head__inner flow">
+            <h1>Reading Vault</h1>
             <form class="form form__add">
-              <div class="form__inner">
+              <div class="form__inner flow">
                 <div class="from_group">
                   <label for="book-title">Title</label>
-                  <input type="text" name="book-title" id="book-title" />
+                  <input
+                    id="book-title"
+                    class="form__add--title"
+                    type="text"
+                    name="book-title"
+                    placeholder="The Lion, the Witch and the Wardrobe"
+                  />
                 </div>
                 <div class="from_group">
                   <label for="book-author">Author</label>
-                  <input type="text" name="book-author" id="book-author" />
+                  <input
+                    id="book-author"
+                    class="form__add--author"
+                    type="text"
+                    name="book-author"
+                    placeholder="C. S. Lewis"
+                  />
                 </div>
                 <div class="from_group">
                   <label for="book-image">Book cover</label>
-                  <input type="text" name="book-image" id="book-image" />
+                  <input
+                    id="book-image"
+                    class="form__add--book-image"
+                    type="text"
+                    name="book-image"
+                    placeholder="https://books.google.hr/books/publisher/content?id"
+                  />
                 </div>
                 <div class="from_group">
                   <label for="book-genre">Genre</label>
-                  <select name="book-genre" id="book-genre">
+                  <select
+                    id="book-genre"
+                    class="form__add--genre"
+                    name="book-genre"
+                  >
                     <option value="fiction">Fiction</option>
                     <option value="non-fiction">Non-Fiction</option>
                   </select>
@@ -44,48 +66,55 @@
           </div>
         </header>
         <main id="main-content" class="main" tabindex="-1">
-          <div class="main__inner">
-            <section class="" aria-label="">
-              <div>
+          <div class="main__inner flow">
+            <section class="search-bar" aria-label="">
+              <div class="search-bar__inner">
                 <h2>Explore</h2>
                 <form class="form form__search">
                   <div class="form__inner">
-                    <label for="book-search">Find the book</label>
+                    <label class="visually-hidden" for="book-search"
+                      >Find the book</label
+                    >
                     <input
+                      id="book-search"
+                      class="form__search--input"
                       type="search"
                       name="book-search"
-                      id="book-search"
                       placeholder="Find the book"
                     />
                   </div>
                 </form>
               </div>
             </section>
-            <section class="" aria-label="">
-              <div>
+            <section class="vault" aria-label="my vault">
+              <div class="vault__inner flow">
                 <h2>My vault</h2>
-                <div class="grid">
-                  <div class="book-card">
-                    <img src="src/images/default-image.png" alt="" />
-                    <div class="book-card__content">
-                      <h3>Book title</h3>
-                      <p>Book Author</p>
-                    </div>
-                  </div>
-                  <div class="book-card">
-                    <img src="src/images/default-image.png" alt="" />
-                    <div class="book-card__content">
-                      <h3>Book title</h3>
-                      <p>Book Author</p>
-                    </div>
-                  </div>
-                  <div class="book-card">
-                    <img src="src/images/default-image.png" alt="" />
-                    <div class="book-card__content">
-                      <h3>Book title</h3>
-                      <p>Book Author</p>
-                    </div>
-                  </div>
+                <div>
+                  <ul class="even-grid">
+                    <li>
+                      <div class="book-card">
+                        <div class="book-card__inner">
+                          <img
+                            class="book-card__image"
+                            src="src/images/default-image.png"
+                            alt=""
+                          />
+                          <button
+                            class="btn btn--delete book-card__button"
+                            type="button"
+                          >
+                            Close
+                          </button>
+                          <div class="book-card__content">
+                            <div class="book-card__content--inner">
+                              <h3>Book title</h3>
+                              <p>Book Author</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>

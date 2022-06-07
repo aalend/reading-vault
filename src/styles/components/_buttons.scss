@@ -1,0 +1,16 @@
+.btn {
+  padding: var(--size-100) var(--size-200);
+  font-weight: 700;
+  background-color: var(--accent-400);
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-elevation-low);
+  transition: box-shadow 50ms ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-700);
+    box-shadow: var(--shadow-elevation-medium);
+  }
+}

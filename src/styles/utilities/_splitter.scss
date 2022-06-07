@@ -1,0 +1,13 @@
+.splitter {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--size-1000);
+
+  & > * {
+    flex-grow: 1;
+  }
+
+  @media (min-width: 48em) {
+    flex-flow: row nowrap;
+  }
+}

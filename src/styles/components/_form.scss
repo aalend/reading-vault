@@ -1,0 +1,28 @@
+.form {
+  width: 100%;
+
+  label {
+    display: block;
+    margin-block-end: var(--size-100);
+    font-size: var(--size-300);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: var(--size-100) var(--size-300);
+    border: 1px solid var(--neutral-500);
+    border-radius: var(--radius);
+
+    &:focus {
+      outline-color: var(--accent-400);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
