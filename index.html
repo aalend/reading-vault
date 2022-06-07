@@ -10,5 +10,88 @@
     <link rel="stylesheet" href="src/styles/main.scss" />
     <script defer src="src/scripts/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Skip to main-content -->
+    <div class="site-page">
+      <div class="">
+        <header class="site-head">
+          <div class="site-head__inner">
+            <h1 class="logo">Reading Vault</h1>
+            <form class="form form__add">
+              <div class="form__inner">
+                <div class="from_group">
+                  <label for="book-title">Title</label>
+                  <input type="text" name="book-title" id="book-title" />
+                </div>
+                <div class="from_group">
+                  <label for="book-author">Author</label>
+                  <input type="text" name="book-author" id="book-author" />
+                </div>
+                <div class="from_group">
+                  <label for="book-image">Book cover</label>
+                  <input type="text" name="book-image" id="book-image" />
+                </div>
+                <div class="from_group">
+                  <label for="book-genre">Genre</label>
+                  <select name="book-genre" id="book-genre">
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                  </select>
+                </div>
+                <button class="btn form__btn" type="submit">Add book</button>
+              </div>
+            </form>
+          </div>
+        </header>
+        <main id="main-content" class="main" tabindex="-1">
+          <div class="main__inner">
+            <section class="" aria-label="">
+              <div>
+                <h2>Explore</h2>
+                <form class="form form__search">
+                  <div class="form__inner">
+                    <label for="book-search">Find the book</label>
+                    <input
+                      type="search"
+                      name="book-search"
+                      id="book-search"
+                      placeholder="Find the book"
+                    />
+                  </div>
+                </form>
+              </div>
+            </section>
+            <section class="" aria-label="">
+              <div>
+                <h2>My vault</h2>
+                <div class="grid">
+                  <div class="book-card">
+                    <img src="src/images/default-image.png" alt="" />
+                    <div class="book-card__content">
+                      <h3>Book title</h3>
+                      <p>Book Author</p>
+                    </div>
+                  </div>
+                  <div class="book-card">
+                    <img src="src/images/default-image.png" alt="" />
+                    <div class="book-card__content">
+                      <h3>Book title</h3>
+                      <p>Book Author</p>
+                    </div>
+                  </div>
+                  <div class="book-card">
+                    <img src="src/images/default-image.png" alt="" />
+                    <div class="book-card__content">
+                      <h3>Book title</h3>
+                      <p>Book Author</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
