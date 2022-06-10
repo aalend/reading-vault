@@ -2,7 +2,7 @@
   "name": "reading-vault",
   "version": "1.0.0",
   "description": "Reading Vault - Store book informations locally.",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
