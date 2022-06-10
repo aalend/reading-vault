@@ -67,7 +67,7 @@ class App {
 
     const title = titleInput.value;
     const author = authorInput.value;
-    const coverImage = coverImageInput.value;
+    const coverImage = coverImageInput.value || '../images/default-image.png';
     const genre = genreInput.value;
     let book;
 
