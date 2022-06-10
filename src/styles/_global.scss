@@ -60,3 +60,10 @@ ol {
   padding: 0;
   list-style: none;
 }
+
+select {
+  width: 100%;
+  padding: var(--size-100) var(--size-300);
+  border: 1px solid var(--neutral-500);
+  border-radius: var(--radius);
+}

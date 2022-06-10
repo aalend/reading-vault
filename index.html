@@ -7,6 +7,7 @@
     <meta name="description" content="Storing book informations locally." />
     <meta name="keywords" content="reading, book, vault, book informations" />
     <title>Reading Vault - Storing book informations locally.</title>
+    <link rel="shortcut icon" href="/" type="image/x-icon" />
     <link rel="stylesheet" href="src/styles/main.scss" />
     <script defer src="src/scripts/main.js"></script>
   </head>
@@ -69,29 +70,49 @@
           <div class="main__inner flow">
             <section class="search-bar" aria-label="">
               <div class="search-bar__inner">
-                <h2>Explore</h2>
-                <form class="form form__search">
-                  <div class="form__inner">
-                    <label class="visually-hidden" for="book-search"
-                      >Find the book</label
+                <div class="search-bar__head">
+                  <h2>Explore</h2>
+                  <div class="search-bar__sort">
+                    <select
+                      class="search-bar__sort--item"
+                      name="sort"
+                      id="sort"
                     >
-                    <input
-                      id="book-search"
-                      class="form__search--input"
-                      type="search"
-                      name="book-search"
-                      placeholder="Find the book"
-                    />
+                      <option value="newest">Newest</option>
+                      <option value="earliest">Earliest</option>
+                    </select>
                   </div>
-                </form>
+                  <div class="search-bar__filter">
+                    <select
+                      class="search-bar__filter--item"
+                      name="sort"
+                      id="sort"
+                    >
+                      <option value="fiction">Fiction</option>
+                      <option value="non-fiction">Non-Fiction</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form form__inner">
+                  <label class="visually-hidden" for="book-search"
+                    >Find the book</label
+                  >
+                  <input
+                    id="book-search"
+                    class="form__search--input"
+                    type="search"
+                    name="book-search"
+                    placeholder="Find the book"
+                  />
+                </div>
               </div>
             </section>
             <section class="vault" aria-label="my vault">
               <div class="vault__inner flow">
                 <h2>My vault</h2>
                 <div>
-                  <ul class="even-grid">
-                    <li>
+                  <ul class="vault__list even-grid">
+                    <!-- <li class="vault__item" data-id="123123123">
                       <div class="book-card">
                         <div class="book-card__inner">
                           <img
@@ -103,7 +124,7 @@
                             class="btn btn--delete book-card__button"
                             type="button"
                           >
-                            Close
+                            Delete
                           </button>
                           <div class="book-card__content">
                             <div class="book-card__content--inner">
@@ -113,7 +134,7 @@
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>

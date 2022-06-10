@@ -5,4 +5,10 @@
     align-items: flex-start;
     gap: var(--size-400);
   }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: var(--size-400);
+  }
 }
